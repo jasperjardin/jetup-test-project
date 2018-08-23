@@ -477,6 +477,9 @@ h3 {
     .email {
         position: absolute;
         color: #fff;
+        &.el-link-sm:hover {
+            color: #fff;
+        }
         &:before {
             background-color: #f0ff32
         }
