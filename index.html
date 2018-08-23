@@ -6,149 +6,389 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="We design and develop web &amp; mobile applications. It seems like you are looking for a top-notch, unique and high-performance website. We are ready. Are you?">
         <meta name="keywords" content="jetup, digital, web, development, mobile, applications, studio, production, php, UI, UX, backend, frontend, solutions, company, SEO, e-commerce, strategy, marketing, startup">
-        <link rel="stylesheet" href="/assets/css/libs.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="msvalidate.01" content="F2A73C77AD71E51F8A9C8804C9F18921">
-        <base href="https://jetup.digital/">
-        <meta property="og:url" content="https://jetup.digital">
-        <meta property="og:title" content="JetUp Digital - We design and develop web &amp; mobile applications">
-        <meta property="og:description" content="We design and develop web &amp; mobile applications. It&nbsp;seems like you are looking for a&nbsp;top-notch, unique and high-performance website. We&nbsp;are ready. Are you?">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="JetUp Digital">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:image" content="https://jetup.digital/assets/img/logo.jpg">
-        <meta property="twitter:image" content="https://jetup.digital/assets/img/logo.jpg">
-        <meta property="twitter:card" content="website">
-        <meta name="twitter:title" content="JetUp Digital - We design and develop web &amp; mobile applications">
-        <meta name="twitter:site" content="@JetUp  Digital">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:description" content="We design and develop web &amp; mobile applications. It&nbsp;seems like you are looking for a&nbsp;top-notch, unique and high-performance website. We&nbsp;are ready. Are you?">
-        <style>
-            body {
-                color: #111111;
-            }
-            body.loading {
-                overflow: hidden;
-            }
-            .page-preloader {
-                position:fixed;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                background: #fff;
-                overflow: hidden;
-                z-index: 100500
-            }
-            .loader {
-                display: inline-block;
-                line-height: 0;
-                top: 50%;
-                left: 50%;
-                width: 160px;
-                margin-top: -80px;
-                height: 80px;
-                position: absolute;
-                transform:translateX(-50%)
-            }
-            .loader .line{
-                position: absolute;
-                z-index: 1;
-                background: rgb(240, 255, 50);
-                transform:scaleX(0);
-                width: 100%;
-                height: 100%;
-                transform-origin: 0 100%;
-                animation: show 2s;
-            }
-            @keyframes  show {
-                0% {
-                transform:scaleX(0);
-                transform-origin: 0 100%;
-                }
-                25% {
-                transform:scaleX(1);
-                transform-origin: 0 100%;
-                }
-                50% {
-                transform:scaleX(1);
-                transform-origin: 100% 100%;
-                }
-                75% {
-                transform:scaleX(0);
-                transform-origin: 100% 100%;
-                }
-            }
-            .loader svg{
-                animation: showLogo 2s;
-            }
-            @keyframes  showLogo {
-                0% {
-                opacity: 0;
-                }
-                25% {
-                opacity: 0;
-                }
-                50% {
-                opacity: 1;
-                }
-                75% {
-                opacity: 1;
-                }
-            }
-            .loader svg .bg{
-                fill: rgb(240, 255, 50);
-            }
-            .loader svg .jet, .loader svg .up{
-                fill: #111;
-            }
-
-
-            .spinner-container {
-                position: absolute;
-                bottom: -20px;
-                left: 50%;
-                margin-left: -80px;
-                width: 160px;
-                height: 1px;
-                overflow: hidden;
-            }
-
-            .spinner-container:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 1px;
-                transform: translate(-100%, 0);
-                background-color: #111;
-                animation: loading 3400ms cubic-bezier(.23, 1, .32, 1) infinite;
-                animation-delay: 2s;
-            }
-
-            @keyframes  loading {
-                75% {
-                transform: translate(0, 0);
-                }
-                100% {
-                transform: translate(100%, 0);
-                }
-            }
-        </style>
-
-        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-116933673-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-116933673-1');
-        </script>
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
     </head>
-
     <body>
+        <div id="page-wrapper" class="page-wrapper js-animate">
+            <header id="header" class="wrapper header">
+                <div class="container">
+                    <a href="#" class="js-anim-logo logo block-revealer">
+                        <div class="block-revealer__content">
+                            <svg version="1.1" width="90" height="45" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 45" style="enable-background:new 0 0 90 45;" xml:space="preserve">
+                                <path class="bg" d="M44.8,0h45v45h-45V0z"></path>
+                                <path class="up" d="M58.1,26.8c-0.7,0-1.4,0-2.2-0.3c-0.2-0.1-0.9-0.4-1.4-1c-0.1-0.1-0.2-0.3-0.2-0.4c-0.2-0.4-0.4-0.8-0.5-1.2
+                                          c-0.1-0.6-0.2-1.2-0.2-1.8V9.2h-3.7v13c0,1.2,0.2,2.4,0.6,3.3c0.4,1,1,1.9,1.7,2.5c0.8,0.7,1.6,1.2,2.6,1.6c1,0.4,2.1,0.6,3.3,0.6
+                                          c1.2,0,2.3-0.2,3.3-0.6s1.9-0.9,2.6-1.6c0.8-0.7,1.3-1.5,1.7-2.5c0.4-1,0.6-2.1,0.6-3.3v-13h-3.7V22c0,0.6-0.1,1.2-0.2,1.8
+                                          c-0.1,0.4-0.3,0.9-0.5,1.2c0,0-0.1,0.2-0.2,0.4c-0.5,0.6-1.2,1-1.4,1C59.5,26.8,58.8,26.8,58.1,26.8 M73.1,15.4c0,0.6,0,1.2,0,1.9
+                                          c0.2-0.2,0.4-0.4,0.7-0.6c0.4-0.3,0.7-0.5,0.9-0.6c0.7-0.3,1.2-0.5,1.5-0.5c0.9-0.2,1.7-0.1,2-0.1c1.2,0.1,2,0.4,2.5,0.7
+                                          c0.8,0.4,1.3,0.8,1.5,0.9c0.2,0.2,0.5,0.4,0.7,0.6c0.6,0.7,1.1,1.4,1.4,2.3s0.5,1.9,0.5,2.9c0,1-0.2,2-0.5,2.9
+                                          c-0.3,0.9-0.8,1.7-1.4,2.3c-0.6,0.7-1.3,1.2-2.1,1.6c-1.2,0.6-2.3,0.6-2.9,0.6c-0.5,0-1.6,0-2.8-0.5c-0.9-0.4-1.5-0.8-1.9-1.2
+                                          c0,2.8,0,5.5,0,8.2h-3.5c0-7.1,0-14.3,0-21.4C70.9,15.4,72,15.4,73.1,15.4z M81.9,22.8c0-0.5-0.1-1.1-0.2-1.6
+                                          c-0.2-0.5-0.4-1-0.8-1.4c-0.3-0.4-0.8-0.8-1.3-1c-0.5-0.3-1.1-0.4-1.8-0.4c-0.7,0-1.2,0.1-1.8,0.4c-0.5,0.3-1,0.6-1.3,1
+                                          c-0.4,0.4-0.6,0.9-0.8,1.4c-0.2,0.5-0.3,1.1-0.3,1.6c0,0.5,0.1,1.1,0.3,1.6c0.2,0.5,0.5,1,0.8,1.4c0.4,0.4,0.8,0.8,1.3,1
+                                          c0.5,0.3,1.1,0.4,1.8,0.4c0.7,0,1.3-0.1,1.8-0.4c0.5-0.3,1-0.6,1.3-1c0.3-0.4,0.6-0.9,0.8-1.4C81.8,23.9,81.9,23.4,81.9,22.8z
+                                            M69.8,9.2h15v3.3h-15V9.2z"></path>
+                                <path class="jet" d="M12.2,23.1c0,0.8-0.1,1.5-0.2,2.4c-0.2,0.8-0.5,1.6-0.9,2.3s-1.1,1.3-1.9,1.8C8.4,30,7.3,30.3,6,30.3c-1.7,0-3-0.4-4-1.2
+                                      c-1-0.8-1.7-1.9-2-3.3l3.4-1c0.2,0.7,0.5,1.2,1,1.6C4.8,26.8,5.3,27,6,27c0.5,0,1-0.1,1.3-0.3c0.3-0.2,0.6-0.5,0.8-0.8
+                                      c0.2-0.4,0.3-0.8,0.4-1.3s0.1-1,0.1-1.6V9.2h3.7L12.2,23.1L12.2,23.1z M29.2,19.7c-0.3-1-0.8-1.7-1.4-2.4c-0.6-0.6-1.3-1.1-2.1-1.4
+                                      c-0.8-0.3-1.7-0.5-2.7-0.5c-1,0-2,0.2-2.9,0.5c-0.9,0.4-1.7,0.9-2.4,1.5c-0.7,0.7-1.2,1.4-1.6,2.4c-0.4,0.9-0.6,2-0.6,3.1
+                                      c0,1.1,0.2,2.2,0.6,3.1c0.4,0.9,0.9,1.7,1.6,2.3c0.7,0.6,1.5,1.1,2.4,1.4c0.9,0.3,1.9,0.5,3,0.5c2.6,0,4.6-0.9,6-2.8c0,0,0,0,0-0.1
+                                      c-1.1-0.3-2.1-0.6-3.2-0.9c-0.1,0.1-0.3,0.3-0.6,0.4c-0.9,0.5-1.8,0.5-2.2,0.5c-0.5,0-1-0.1-1.5-0.3c-0.5-0.2-0.9-0.4-1.3-0.7
+                                      c-0.4-0.3-0.7-0.7-0.9-1.1c-0.2-0.4-0.4-0.9-0.4-1.4h10.7c0-0.1,0-0.3,0-0.5c0-0.1,0-0.3,0-0.5C29.7,21.7,29.6,20.6,29.2,19.7z
+                                        M19,21.2c0.1-0.9,0.5-1.6,1.2-2.2s1.6-0.9,2.7-0.9c0.6,0,1,0.1,1.5,0.2c0.4,0.2,0.8,0.4,1,0.7c0.3,0.3,0.5,0.6,0.6,1
+                                      c0.1,0.4,0.2,0.8,0.2,1.1C26.3,21.2,19,21.2,19,21.2z M36.4,19.2c0,0,0-0.1,0-0.1c0-0.3,0-0.7,0-1h3.3v-2.7h-3.3v-2.8h-3.3v2.8h-2.4
+                                      v2.7h2.4c0,0.4,0,0.7,0,1.1l0,0v6.3c0,0.7,0,1.3,0.2,1.8c0.1,0.6,0.3,1.1,0.7,1.5c0.3,0.4,0.8,0.8,1.3,1c0.6,0.2,1.3,0.4,2.2,0.4
+                                      c0.2,0,0.6,0,1.2-0.1c0.4-0.1,0.8-0.2,1.1-0.3c0-0.9,0-1.9,0-2.8c-0.2,0.1-0.5,0.1-0.8,0.2c-0.1,0-0.4,0.1-0.6,0.1
+                                      c-0.3,0-0.9,0-1.2-0.2c-0.7-0.5-0.7-1.6-0.7-1.7L36.4,19.2L36.4,19.2z"></path>
+                            </svg>
+                        </div>
+                        <div class="block-revealer__element" ></div>
+                    </a>
+
+                    <a href="mailto:hello@jetup.digital" class="js-anim-email email el-link-sm">
+                        <span>hello</span>
+                        <svg class="icon icon-at-bold">
+                            <use xlink:href="assets/images/sprite.svg#at-bold"></use>
+                        </svg>
+                        <span>jetup.digital</span>
+                    </a>
+
+                    <a href="#" class="js-anim-btn-menu btn-menu js-open-general-menu">
+                        <span class="line"></span>
+                        <div class="title-page">
+                            <span class="title">Menu</span>
+                            <span class="menu-number">&nbsp;</span>
+                        </div>
+                    </a>
+                </div>
+            </header><!-- #header -->
+
+            <div class="general-menu" id="general-menu">
+                <div class="js-close-line close-line"></div>
+                <div class="general-menu-wrap">
+                    <div class="general-menu-content">
+                        <div class="lines"></div>
+
+                        <button class="close js-close-general-menu">
+                            <svg class="icon icon-close">
+                            <use xlink:href="assets/images/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+
+                        <a href="mailto:hello@jetup.digital" class="email el-link-sm">
+                            <span>hello</span>
+                            <svg class="icon icon-at-bold">
+                                <use xlink:href="assets/images/sprite.svg#at-bold"></use>
+                            </svg>
+                            <span>jetup.digital</span>
+                        </a>
+
+                        <ul class="js-anim-social social js-social">
+                            <li><a target="blank" href="#" class="el-link-sm">Facebook</a></li>
+                            <li><a target="blank" href="#" class="el-link-sm">Instagram</a></li>
+                            <li><a target="blank" href="#" class="el-link-sm">Behance</a></li>
+                            <li><a target="blank" href="#" class="el-link-sm">Dribbble</a></li>
+                        </ul>
+
+                        <a href="#" class="sound el-link-sm mute" data-text-off="Sound Off" data-text-on="Sound On">
+                            <i class="line"></i>
+                            <i class="line"></i>
+                            <i class="line"></i>
+                            <i class="line"></i>
+                        </a>
+
+                        <p class="copyright">© 2018 by JetUp Digital. All rights reserved.</p>
+
+                        <ul class="el-right-menu__list js-general-menu">
+                            <li class="el-right-menu__item"><a href="#" class="el-right-menu__link">About Us</a></li>
+                            <li class="el-right-menu__item"><a href="#" class="el-right-menu__link">Services</a></li>
+                            <li class="el-right-menu__item"><a href="#" class="el-right-menu__link">Cases</a></li>
+                            <li class="el-right-menu__item"><a href="#" class="el-right-menu__link">Expertise</a></li>
+                            <li class="el-right-menu__item"><a href="#" class="el-right-menu__link">Careers</a></li>
+                            <li class="el-right-menu__item"><a href="#" class="el-right-menu__link">Contacts</a></li>
+                            <li class="el-right-menu__line"></li>
+                        </ul>
+                    </div><!-- .general-menu-content -->
+                </div>
+            </div><!-- #general-menu -->
+
+            <div id="page-body" class="page-body mod-home-first js-home page-index">
+                <div class="animation-wrapper" id="animation-wrapper">
+                    <canvas id="animation-visual-canvas"></canvas>
+                </div>
+
+                <div class="home-text-bg">JetUp</div>
+
+                <ul class="js-el-right-menu js-anim-r-menu el-right-menu__list">
+                    <li class="el-right-menu__item is-active"><a href="#" data-home="0" class="animate-home-link el-right-menu__link">JetUp</a></li>
+                    <li class="el-right-menu__item"><a href="#" data-home="1" class="animate-home-link el-right-menu__link">Design</a></li>
+                    <li class="el-right-menu__item"><a href="#" data-home="2" class="animate-home-link el-right-menu__link">Web Development</a></li>
+                    <li class="el-right-menu__item"><a href="#" data-home="3" class="animate-home-link el-right-menu__link">Application</a></li>
+                    <li class="el-right-menu__item"><a href="#" data-home="4" class="animate-home-link el-right-menu__link">E-commerce</a></li>
+                    <li class="el-right-menu__item"><a href="#" data-home="5" class="animate-home-link el-right-menu__link">Startup</a></li>
+                    <li class="el-right-menu__line"></li>
+                </ul>
+
+                <div class="container container-center" id="swipezone">
+                    <div class="home-item mod-jetup">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="js-anim-h1 h1 block-revealer">
+                                    <div class="block-revealer__content">
+                                        <div class="block-revealer__content">Hi! We are <br> JetUp Digital</div>
+                                        <div class="block-revealer__element" ></div>
+                                    </div>
+                                    <div class="block-revealer__element"></div>
+                                </h1>
+                                <h3 class="js-anim-h3 h3">We design and develop web & mobile applications.</h3>
+                                <p class="text-left">
+                                    <span class="js-anim-text-home text-home">
+                                        It seems like you are looking for a top-notch, unique and high-performance website. We are ready. Are you?
+                                    </span>
+                                </p>
+                                <p class="text-mob-center">
+                                    <span class="btn-wrap js-anim-btn">
+                                        <a href="#" class="js-open-modal el-btn">Start the Project</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-item mod-design">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="js-anim-h1 h1 block-revealer">
+                                    <div class="block-revealer__content">Design</div>
+                                    <div class="block-revealer__element"></div>
+                                </h2>
+                                <h3 class="js-anim-h3 h3">Wireframing, Web Design, App Design, UI/UX Design</h3>
+                                <p class="text-left">
+                                    <span class="js-anim-text-home text-home">
+                                        We create eye-catching and modern design. We always strive to surpass our previous achievements. JetUp is all about improvement and following new design trends.
+                                    </span>
+                                </p>
+                                <p class="text-mob-center">
+                                    <span class="btn-wrap js-anim-btn">
+                                        <a href="#" class="js-open-modal el-btn">Start the Project</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-item mod-web-development">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="js-anim-h1 h1 block-revealer">
+                                    <div class="block-revealer__content">Web <br>Development</div>
+                                    <div class="block-revealer__element"></div>
+                                </h2>
+                                <h3 class="js-anim-h3 h3">PHP, NODE.JS, DATABASE ARCHITECTURE</h3>
+                                <p class="text-left">
+                                    <span class="js-anim-text-home text-home">
+                                        JetUp was founded by two developers, and the planting of that flag has directed us since. As a top Laravel shop and practitioners of Node.js since its inception, our developers combine pace, efficiency, and insight that you’ll depend on.
+                                    </span>
+                                </p>
+                                <p class="text-mob-center">
+                                    <span class="btn-wrap js-anim-btn">
+                                        <a href="#" class="js-open-modal el-btn">Start the Project</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-item mod-application">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="js-anim-h1 h1">Application</h2>
+                                <h3 class="js-anim-h3 h3">Cross-platform and Native mobile applications.</h3>
+                                <p class="text-left">
+                                    <span class="js-anim-text-home text-home">
+                                    Keep pace with new trends in Web World! Have you heard that across mature markets, users on average are spending two hours per day — which equates to one month out of every year — in apps? And we know how to make you app to top the list.
+                                    </span>
+                                </p>
+                                <p class="text-mob-center">
+                                    <span class="btn-wrap js-anim-btn">
+                                        <a href="#" class="js-open-modal el-btn">Start the Project</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-item mod-ecommerce">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="js-anim-h1 h1">E-commerce</h2>
+                                <h3 class="js-anim-h3 h3">Design, Development, Marketing Strategy, Media Planning & Buying</h3>
+                                <p class="text-left">
+                                    <span class="js-anim-text-home text-home">
+                                    We know how to sell your product. We know exactly where people will buy it. We will make people want to buy YOUR product in YOUR online store. Promise!
+                                    </span>
+                                </p>
+                                <p class="text-mob-center">
+                                    <span class="btn-wrap js-anim-btn">
+                                        <a href="#" class="js-open-modal el-btn">Start the Project</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-item mod-startups">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="js-anim-h1 h1">Startups</h2>
+                                <h3 class="js-anim-h3 h3">Brand, Strategy, Design, Development</h3>
+                                <p class="text-left">
+                                    <span class="js-anim-text-home text-home">We make working with an agency super easy and enjoyable for startups. Whether you're building for growth, investment or an exit we will tailor our approach to match your objectives.</span>
+                                </p>
+                            <p class="text-mob-center">
+                                <span class="btn-wrap js-anim-btn"><a href="#" class="js-open-modal el-btn">Start the Project</a></span>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- #swipezone -->
+
+            </div><!-- #page-body -->
+
+            <footer id="footer" class="wrapper footer">
+                <div class="container">
+                    <a href="#" class="js-anim-sound sound el-link-sm mute" data-text-off="Sound On" data-text-on="Sound Off">
+                        <i class="line"></i>
+                        <i class="line"></i>
+                        <i class="line"></i>
+                        <i class="line"></i>
+                    </a>
+                    <p class="js-anim-copyright copyright">© 2018 by JetUp Digital. All rights reserved.</p>
+                    <ul class="js-anim-social social js-social">
+                        <li><a target="blank" href="#" class="el-link-sm">Facebook</a></li>
+                        <li><a target="blank" href="#" class="el-link-sm">Instagram</a></li>
+                        <li><a target="blank" href="#" class="el-link-sm">Behance</a></li>
+                        <li><a target="blank" href="#" class="el-link-sm">Dribbble</a></li>
+                    </ul>
+                </div>
+            </footer><!-- #footer -->
+
+            <audio hidden="" id="music_sound" loop="">
+                <source src="assets/sound/sound.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <button class="close js-close-modal">
+                        <svg class="icon icon-close">
+                            <use xlink:href="assets/images/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+
+                    <div class="container container-center js-form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="h2 mod-title-section">
+                                    <span class="js-anim-title-modal">Got a project? Great!<br> Share its details with us and<br> we will do the rest.</span>
+                                    <span class="el-bg-text">Hello JetUp</span>
+                                </div>
+
+                                <div class="content-section">
+                                    <form action="#" class="form-contact js-validate" novalidate="novalidate">
+
+                                        <div class="js-anim-modal-items col-left">
+
+                                            <div class="el-input el-text-fel">
+                                                <input class="el-input__field" name="name" type="text" value="" id="name" autocomplete="name" data-valid="name">
+                                                <label class="el-input__label" for="name">
+                                                    <span class="el-input__label-content">Your Name</span>
+                                                </label>
+                                                <svg class="graphic" width="300%" height="60px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                </svg>
+                                            </div>
+
+                                            <div class="el-input el-text-fel">
+                                                <input class="el-input__field" name="email" type="text" value="" id="email" autocomplete="email" data-valid="email">
+                                                <label class="el-input__label" for="email">
+                                                    <span class="el-input__label-content">Your E-mail</span>
+                                                </label>
+                                                <svg class="graphic" width="300%" height="60px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                </svg>
+                                            </div>
+
+                                            <div class="el-input el-text-fel">
+                                                <input class="el-input__field" name="company" type="text" value="" autocomplete="company" data-valid="company">
+                                                <label class="el-input__label" for="company">
+                                                    <span class="el-input__label-content">Your Company Name</span>
+                                                </label>
+                                                <svg class="graphic" width="300%" height="60px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                </svg>
+                                            </div>
+
+                                        </div><!-- .js-anim-modal-items -->
+
+                                        <div class="js-anim-modal-items col-right">
+                                            <div class="el-textarea el-text-fel">
+                                                <textarea class="el-textarea__field" name="message" type="text" value="" id="message" data-valid="message"></textarea>
+                                                <label class="el-textarea__label" for="message">
+                                                    <span class="el-textarea__label-content">Message</span>
+                                                </label>
+                                                <svg class="graphic" width="300%" height="60px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                </svg>
+                                            </div>
+                                        </div><!-- .js-anim-modal-items -->
+
+                                        <div class="mod-col-fluid">
+                                            <div class="js-anim-modal-items wrap-file">
+                                                <div class="el-file-input el-text-fel">
+                                                    <input type="file" name="file" data-valid="file" accept=".jpeg,.jpg,.png,.doc,.docx,.pdf">
+                                                    <span class="button">
+                                                        <svg class="icon icon-attach">
+                                                            <use xlink:href="assets/images/sprite.svg#attach"></use>
+                                                        </svg>
+                                                    </span>
+
+                                                    <span class="label" data-text="Attach File" data-js-label="">Attach File</span>
+                                                    <span class="close js-clear-file">
+                                                        <svg class="icon icon-close">
+                                                            <use xlink:href="assets/images/sprite.svg#close"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <span class="btn-wrap js-anim-modal-btn">
+                                                <button type="submit" class="el-btn progress-button" data-style="shrink" data-horizontal="">
+                                                    <span class="content">SEND A MESSAGE</span>
+                                                    <span class="progress">
+                                                        <span class="progress-inner notransition"></span>
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        </div><!-- .mod-col-fluid -->
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container container-center success-message">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="h2 mod-title-section">Thank you for contacting <br>us and trusting your project, <br> we will contact you as <br>soon as possible!<span class="el-bg-text">Thank You!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="js-anim-modal-copyr copyright">© 2018 by JetUp. All rights reserved.</p>
+                </div>
+            </div><!-- #modal -->
+
+        </div>
+
+        <script src="assets/js/libs.min.js"></script>
+        <script src="assets/js/scripts.min.js"></script>
+
     </body>
 </html>

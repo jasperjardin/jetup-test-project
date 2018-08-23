@@ -1,0 +1,66 @@
+// Loading Component
+.page-preloader {
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    overflow: hidden;
+    z-index: 100500
+}
+
+.loader {
+    display: inline-block;
+    line-height: 0;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    margin-top: -80px;
+    height: 80px;
+    position: absolute;
+    transform:translateX(-50%);
+
+    .line {
+        position: absolute;
+        z-index: 1;
+        background: rgb(240, 255, 50);
+        transform:scaleX(0);
+        width: 100%;
+        height: 100%;
+        transform-origin: 0 100%;
+        animation: show 2s;
+    }
+    svg{
+        animation: showLogo 2s;
+        .bg{
+            fill: rgb(240, 255, 50);
+        }
+        .jet,
+        .up{
+            fill: #111;
+        }
+    }
+}
+
+// Spinner
+.spinner-container {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
+    height: 1px;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        transform: translate(-100%, 0);
+        background-color: #111;
+        animation: loading 3400ms cubic-bezier(.23, 1, .32, 1) infinite;
+        animation-delay: 2s;
+    }
+}

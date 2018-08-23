@@ -1,0 +1,31 @@
+input {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    &::-ms-clear,
+    &::-ms-reveal {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+a.button,
+button,
+input[type=button],
+input[type=image],
+input[type=reset],
+input[type=submit] {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background: 0 0;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+}
