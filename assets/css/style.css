@@ -1365,6 +1365,10 @@ h3 {
   color: #fff;
 }
 
+.general-menu-content .email.el-link-sm:hover {
+  color: #fff;
+}
+
 .general-menu-content .email:before {
   background-color: #f0ff32;
 }
@@ -4384,6 +4388,7 @@ input[type=submit] {
   .btn-menu {
     top: 35px;
     right: 20px;
+    left: auto;
   }
   .close {
     -webkit-transform: translateY(0);
